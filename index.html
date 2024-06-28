@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mavendeor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <header class="header">
+        <section class="wrapper">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="images/logo_d.png" alt="Mavendoer Logo">
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="close-toggle" id="close-menu">&times;</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="digital.html">Digital</a></li>
+                    <li><a href="art.html">Art</a></li>
+                    <li><a href="entertainment.html">Entertainment</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="mavendoers.html">Mavendoers</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    
+
+    <!--header-end-->
+
+    
+    <main>
+        <div class="hero-slideshow">
+            <div class="overlay">
+                <div class="title">Welcome to Mavendoer</div>
+            </div>
+    
+            <!-- Slideshow container -->
+            <div class="slides">
+                <div class="slide" style="background-image: url('./images/people3.webp');">
+                    <div class="slide-text">
+                        <h3>It is about the </h3>
+                        <h1>stories you tell</h1>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('./images/people1.webp');">
+                    <div class="slide-textt">
+                        <h3 class="aa">Creat And</h1>
+                        <h1 class="bb">Connect</h1>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="slideshow-dots"></div>
+        </div>
+    </main>  <!--end-->
+
+<section id="middle">
+  <section class="wrapper">
+    <div class="journey">
+    <h1 class="a1">Journey</h1>
+
+      <h1 class="a2">A Maven is an expert.</h1>
+      <h1 class="a3">A Doer is a person who does more than talking.</h1>
+      <h1 class="a4">We disrupt the digital world.</h1>
+      <p>South Asian digital marketing agency based out of Singapore with a great bunch of Doers committed to disrupt the online arena and scale-up each business into a profitable machine.</p>
+      <p>Brainchild of Vinay Bharadwaj and Smita Uchil who come with more than 30 years of combined industry expertise in diverse areas of communication, entertainment and advertising.</p>
+    </div>
+  </section>
+</section>
+
+
+
+
+<div class="footer">
+	<div class="container">		
+		<div class="row text-center">						
+			<div class="col-lg-12 col-sm-12 col-xs-12">
+				<div class="footer_menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="digital.html">Dgital</a></li>
+						<li><a href="art.html">Art</a></li>
+						<li><a href="entertainment.html">Entertainment</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="mavendoers.html">Mavendeor</a></li>
+                       <li><a href="blog.html">Blog</a></li>
+                       <li><a href="contact.html">Contact</a></li>
+                    </ul>
+				</div>						
+				<div class="footer_copyright">
+					<p>Copyright © 2022 Mavendoer | Singapore</p>
+				</div>	
+				<div class="footer_profile">
+					<ul>
+						<li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+						<li><a href=""><i class='bx bxl-instagram'></i></a></li>
+						<li><a href="#"><i class='bx bxl-linkedin' ></i></a></li>
+						<li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+						<li><a href="#"><i class='bx bxl-telegram' ></i></a></li>
+
+            
+					</ul>
+				</div>						
+			</div><!--- END COL -->							
+		</div><!--- END ROW -->					
+	</div><!--- END CONTAINER -->
+</div>
+
+
+     <script>
+            ScrollReveal({
+    reset:true,
+    distance:'60px',
+    duration:2500,
+    delay:400
+    });
+
+    ScrollReveal().reveal('.a1, .a2, .a3, .a4, p, h1, h3, .aa, .bb', { delay:400, origin:'left' });
+    ScrollReveal().reveal('.journey', { delay:400, origin:'bottom' });
+    ScrollReveal().reveal('.footer', { delay:400, origin:'top' });
+
+
+
+    
+    document.addEventListener('DOMContentLoaded', () => {
+  const mobileMenu = document.getElementById('mobile-menu');
+  const closeMenu = document.getElementById('close-menu');
+  const navLinks = document.querySelector('.nav-links');
+
+  mobileMenu.addEventListener('click', () => {
+      navLinks.classList.add('active');
+      mobileMenu.style.display = 'none';
+      closeMenu.style.display = 'block';
+  });
+
+  closeMenu.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      closeMenu.style.display = 'none';
+      mobileMenu.style.display = 'flex';
+  });
+});
+
+
+
+     </script>  
+ <script src="js/index.js"></script>
+
+</body>
+</html>

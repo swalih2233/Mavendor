@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mavendeor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+</head>
+<body>
+    <header class="header2">
+        <section class="wrapper">
+            <nav class="nav2">
+                <div class="logo2">
+                    <img src="images/logo_d.png" alt="Mavendoer Logo">
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="close-toggle" id="close-menu">&times;</div>
+                <ul class="nav-links2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="digital.html">Digital</a></li>
+                    <li><a href="art.html">Art</a></li>
+                    <li><a href="entertainment.html">Entertainment</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="mavendoers.html">Mavendoers</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    
+
+     <!--header-end-->
+
+   <section id="blog">
+    <section class="wrapper">
+        <div class="itm">
+            <div class="image">
+                <a href="">
+                    <img src="images/Blog-01-1024x1024.jpg" alt="">
+                </a>
+               
+            </div>
+            <div class="contnt">
+                <h1>Google Search Engine: Your Ultimate Tool for Information Discovery</h1>
+
+                <div class="icon">
+                    <i class='bx bxs-calendar'></i>
+                    <a href="">June 21, 2023</a>
+                    <i class='bx bxl-digitalocean'></i>
+                    <a href="">Digital</a>
+                </div>
+                <p>Google Search Engine is a sophisticated tool created by Google that allows people to search for information on the internet. It employs complicated <a href=""><b>Read more.....</b></a></p>
+            </div>
+        </div>
+
+        <div class="itm">
+           
+            <div class="contnt">
+                <h1>Crafting a Compelling Brand Story: Strategies for Success</h1>
+
+                <div class="icon">
+                    <i class='bx bxs-calendar'></i>
+                    <a href="">June 21, 2023</a>
+                    <i class='bx bxl-digitalocean'></i>
+                    <a href="">Digital</a>
+                </div>
+                <p>In today’s competitive world, having a great brand is more vital than ever. A brand is much more than a logo or a catchphrase. It is the <a href=""><b>Read more.....</b></a></p>
+            </div>
+
+            <div class="image">
+                <a href="">
+                    <img src="images/brand.jpg" alt="">
+                </a>
+               
+            </div>
+        </div>
+    </section>
+   </section>  <!--end-->
+
+   <div class="footer">
+	<div class="container">		
+		<div class="row text-center">						
+			<div class="col-lg-12 col-sm-12 col-xs-12">
+				<div class="footer_menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="digital.html">Dgital</a></li>
+						<li><a href="art.html">Art</a></li>
+						<li><a href="entertainment.html">Entertainment</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="mavendoers.html">Mavendeor</a></li>
+                       <li><a href="blog.html">Blog</a></li>
+                       <li><a href="contact.html">Contact</a></li>
+                    </ul>
+				</div>						
+				<div class="footer_copyright">
+					<p>Copyright © 2022 Mavendoer | Singapore</p>
+				</div>	
+				<div class="footer_profile">
+					<ul>
+						<li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+						<li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+						<li><a href="#"><i class='bx bxl-linkedin' ></i></a></li>
+						<li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+						<li><a href="#"><i class='bx bxl-telegram' ></i></a></li>
+
+            
+					</ul>
+				</div>						
+			</div><!--- END COL -->							
+		</div><!--- END ROW -->					
+	</div><!--- END CONTAINER -->
+</div>
+
+
+<script>
+            ScrollReveal({
+        reset:true,
+        distance:'60px',
+        duration:2500,
+        delay:400
+        });
+
+        ScrollReveal().reveal('.contnt ', { delay:500, origin:'bottom' });
+        ScrollReveal().reveal('.itm', { delay:500, origin:'left' });
+        ScrollReveal().reveal('.footer, p', { delay:500, origin:'top' });
+
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navLinks = document.querySelector('.nav-links2');
+
+  mobileMenu.addEventListener('click', () => {
+     console.log('clicked')
+      navLinks.classList.toggle('active');
+  });
+
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const mobileMenu = document.getElementById('mobile-menu');
+  const closeMenu = document.getElementById('close-menu');
+  const navLinks = document.querySelector('.nav-links2');
+
+  mobileMenu.addEventListener('click', () => {
+      navLinks.classList.add('active');
+      mobileMenu.style.display = 'none';
+      closeMenu.style.display = 'block';
+  });
+
+  closeMenu.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      closeMenu.style.display = 'none';
+      mobileMenu.style.display = 'flex';
+  });
+});
+</script>  
+
+<script src="js/index.js"></script>
+</body>
+</html>

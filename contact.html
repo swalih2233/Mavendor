@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mavendeor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+</head>
+<body>
+    <header class="header2">
+        <section class="wrapper">
+            <nav class="nav2">
+                <div class="logo2">
+                    <img src="images/logo_d.png" alt="Mavendoer Logo">
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="close-toggle" id="close-menu">&times;</div>
+                <ul class="nav-links2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="digital.html">Digital</a></li>
+                    <li><a href="art.html">Art</a></li>
+                    <li><a href="entertainment.html">Entertainment</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="mavendoers.html">Mavendoers</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    
+
+     <!--header-end-->
+   
+   <section id="contact">
+    <section class="wrapper">
+        <div class="itemm">
+            <div class="left">
+                <div class="card">
+                    <i class='bx bxs-phone'></i>
+
+                    <div class="list">
+                        <h1>Phone Number</h1>
+                        <p>+65 9113 1667</p>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <i class='bx bxs-envelope'></i>
+
+                    <div class="list">
+                        <h1>Email Address</h1>
+                        <p>contact@mavendoer.com</p>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <i class='bx bxs-location-plus' ></i>
+
+                    <div class="list">
+                        <h1>Location</h1>
+                        <p>36, Carpenter Street,
+                            Singapore 059915</p>
+                    </div>
+
+                </div>
+
+               
+
+                
+            </div>
+
+            <div class="right">
+                <h1>Send Message</h1>
+
+                <form action="">
+                  <div class="aa">
+                    <input type="text" placeholder="Your name">
+                    <input type="email" placeholder="Email address">
+                   </div>
+
+                   <div class="bb">
+                    <input type="text" placeholder="Phone number">
+                    <input type="text" placeholder="Subject">
+                   </div>
+
+                   <input type="text" placeholder="Message" class="message"> <br>
+
+                   <input type="submit" value="Send Message" class="btn">
+                </form>
+            </div>
+        </div>
+    </section>
+   </section> <!--end-->
+
+   <div class="footer">
+	<div class="container">		
+		<div class="row text-center">						
+			<div class="col-lg-12 col-sm-12 col-xs-12">
+				<div class="footer_menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="digital.html">Dgital</a></li>
+						<li><a href="art.html">Art</a></li>
+						<li><a href="entertainment.html">Entertainment</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="mavendoers.html">Mavendeor</a></li>
+                       <li><a href="blog.html">Blog</a></li>
+                       <li><a href="contact.html">Contact</a></li>
+                    </ul>
+				</div>						
+				<div class="footer_copyright">
+					<p>Copyright © 2022 Mavendoer | Singapore</p>
+				</div>	
+				<div class="footer_profile">
+					<ul>
+						<li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+						<li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+						<li><a href="#"><i class='bx bxl-linkedin' ></i></a></li>
+						<li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+						<li><a href="#"><i class='bx bxl-telegram' ></i></a></li>
+
+            
+					</ul>
+				</div>						
+			</div><!--- END COL -->							
+		</div><!--- END ROW -->					
+	</div><!--- END CONTAINER -->
+</div>
+
+
+<script>
+            ScrollReveal({
+        reset:true,
+        distance:'60px',
+        duration:2500,
+        delay:400
+        });
+
+        ScrollReveal().reveal('.left, .footer, p ', { delay:500, origin:'top' });
+        ScrollReveal().reveal('.right', { delay:500, origin:'right' });
+
+
+
+
+   
+
+        document.addEventListener('DOMContentLoaded', () => {
+  const mobileMenu = document.getElementById('mobile-menu');
+  const closeMenu = document.getElementById('close-menu');
+  const navLinks = document.querySelector('.nav-links2');
+
+  mobileMenu.addEventListener('click', () => {
+      navLinks.classList.add('active');
+      mobileMenu.style.display = 'none';
+      closeMenu.style.display = 'block';
+  });
+
+  closeMenu.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      closeMenu.style.display = 'none';
+      mobileMenu.style.display = 'flex';
+  });
+});
+
+</script>  
+
+<script src="js/index.js"></script>
+</body>
+</html>
